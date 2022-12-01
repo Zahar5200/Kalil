@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54caf99-d2f3-4416-83cb-95f55721a4f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/Project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/Project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/KalilBackend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,14 +22,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nowik/Desktop/Kalil/KalilBackend/Kalil/static&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/daniildosin/PycharmProjects/Kalil",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Nowik\Desktop\Kalil\KalilBackend\Kalil\static" />
