@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f54caf99-d2f3-4416-83cb-95f55721a4f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/Project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/Project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/templates/main/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalilBackend/KalilBackend/Kalil/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
