@@ -3,7 +3,7 @@ from django.db import models
 
 
 
-class Users(models.Model):
+class User(models.Model):
     first_name = models.CharField('First_name', max_length=200)
     last_name = models.CharField('Last_name', max_length=200)
     user_name = models.CharField('User_name', max_length=50)
