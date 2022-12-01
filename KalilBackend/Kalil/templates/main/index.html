@@ -29,14 +29,14 @@
                     <div class="front">
                         <div class="front__wrapper">
                             <h2 class="front__title">Войти</h2>
-                            <form class="form login-form" method="" action="">
+                            <form class="form login-form" method="post" action="{% url 'login' %}">
                                 <div class="email">
                                     <input placeholder="Введите email" id="cemail" type="email" name="email" required class="form__input">
                                 </div>
                                 <div class="password">
                                     <input placeholder="Введите пароль" class="form__input">
                                 </div>
-                                <a class="form__btn entry" href="adminData.html" target="_blank">Войти</a>
+                                <a class="form__btn entry" href="{% url 'login' %}" target="_blank">Войти</a>
                                 <button class="form__btn forgot-pass">Забыли пароль?</button>
                             </form>
                         </div>
@@ -44,7 +44,7 @@
                     <div class="back">
                         <div class="back__wrapper">
                             <h2 class="front__title">Регистрация</h2>
-                            <form class="form registr-form" method="" action="">
+                            <form class="form registr-form" method="post" action="{% url 'register' %}">
                                 <div class="name">
                                     <input placeholder="Введите ваше имя" id="cname" name="name" minlength="2" type="text" required class="form__input registr-name">
                                 </div>

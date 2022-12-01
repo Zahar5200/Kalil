@@ -3,9 +3,12 @@ from django.views import View
 from django.shortcuts import render, redirect
 from users.forms import UserCreationForm
 
-class Register(View):
+def index(request):
+    return render(request, template_name='main/index.html')
 
-    template_name ='registration/register.html'
+
+class Register(View):
+    template_name ='main/register.html'
     def get(self, request):
         context = {
             'form': UserCreationForm()

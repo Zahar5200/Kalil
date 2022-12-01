@@ -2,7 +2,9 @@
 
 <html lang="en">
 <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'css/adminData.css' %">
+    <link rel="stylesheet" href="{% static 'css/adminData.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
     User: {{ user }}
   </li>
   <li class="list-group-item">
-    <a href="{% url 'index' %}">Home page</a>
+    <a href="{% url 'login' %}">Home page</a>
   </li>
 </ul>
 
@@ -28,9 +30,8 @@
 
 </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="{% static 'js/jquery.validate.js' %}"></script>
     <script src="{% static 'js/main.min.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="{% static 'js/adminData.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>

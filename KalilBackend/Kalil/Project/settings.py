@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'main',
     'users'
 ]
 
@@ -45,7 +44,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Проект.urls'
+ROOT_URLCONF = 'Project.urls'
 
 TEMPLATES = [
     {
@@ -63,7 +62,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Проект.wsgi.application'
+WSGI_APPLICATION = 'Project.wsgi.application'
 
 
 # Database
