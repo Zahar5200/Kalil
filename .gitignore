@@ -1,4 +1,5 @@
-.idea
+.idea/
 venvProject
 .idea
 env
+Project/__pycache__
