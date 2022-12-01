@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.views import LoginView
 from django.views import View
 from django.shortcuts import render, redirect
 from users.forms import UserCreationForm
@@ -29,3 +30,7 @@ class Register(View):
             'form': form
         }
         return render(request, self.template_name, context)
+
+
+
+

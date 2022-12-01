@@ -36,7 +36,7 @@
                                 <div class="password">
                                     <input placeholder="Введите пароль" class="form__input">
                                 </div>
-                                <a class="form__btn entry" href="{% url 'login' %}" target="_blank">Войти</a>
+                                <a class="form__btn entry" href="{% url 'index' %}" target="_blank">Войти</a>
                                 <button class="form__btn forgot-pass">Забыли пароль?</button>
                             </form>
                         </div>
@@ -63,6 +63,28 @@
         </div>
     </main>
 
-</body>
+
+  <h1>Login</h1>
+  <hr>
+
+  {% if form.errors %}
+  <p>{{ form.errors.error }}</p>
+  {% endif %}
+
+  <form action="{% url 'login' %}" method="post">
+    {{ form }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-success">submit</button>
+  </form>
+    <h1>Register</h1>
+  <hr>
+
+  <form action="{% url 'index' %}" method="post">
+      {{ form }}
+      {% csrf_token %}
+    <button type="submit" class="btn btn-success">submit</button>
+  </form>
+  <a href="{% url 'password_reset' %}">Forgot password?</a>
 {% endblock %}
+</body>
 </html>
