@@ -11,55 +11,68 @@
 {% block content %}
 <body>
 
-    <main class="main">
-        <div class="click-btn">
-            <h1 class="main__title"><span class="main__subtitle">Вход</span>/Регистрация</h1>
-            <button class="flip-btn">
-                <div class="flip-btn__arrow">
+<main class="main">
+    <div class="click-btn">
+        <h1 class="main__title"><span class="main__subtitle">Вход</span>/Регистрация</h1>
+        <button class="flip-btn">
+            <div class="flip-btn__arrow">
 
-                </div>
-            </button>
-        </div>
-        <div class="container">
-            <div class="flip-container">
-                <div class="flipper">
-                    <div class="front">
-                        <div class="front__wrapper">
-                            <h2 class="front__title">Войти</h2>
-                            <form class="form login-form" method="post" action="submit">
-                                <div class="email">
-                                    <input placeholder="Введите email" id="cemail" type="email" name="email" required class="form__input">
-                                </div>
-                                <div class="password">
-                                    <input placeholder="Введите пароль" class="form__input">
-                                </div>
-                                <a class="form__btn entry" href="{% url 'adminData' %}" target="_blank">Войти</a>
-                                <button class="form__btn forgot-pass">Забыли пароль?</button>
-                            </form>
-                        </div>
+            </div>
+        </button>
+    </div>
+    <div class="container">
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front">
+                    <div class="front__wrapper">
+                        <h2 class="front__title">Войти</h2>
+                        <form class="form login-form" method="post" action="/">
+
+                            <div class="email">
+                                <input placeholder="Введите email" id="email" type="email" name="email" required
+                                       class="form__input">
+                            </div>
+                            <div class="password">
+                                <input placeholder="Введите пароль" class="form__input" name="password">
+                            </div>
+                            <a class="form__btn entry" href="{% url 'adminData' %}" target="_blank">Войти</a>
+                            <button class="form__btn forgot-pass">Забыли пароль?</button>
+                        </form>
                     </div>
-                    <div class="back">
-                        <div class="back__wrapper">
-                            <h2 class="front__title">Регистрация</h2>
-                            <form class="form registr-form" method="post" action="submit">
-                                <div class="name">
-                                    <input placeholder="Введите ваше имя" id="cname" name="name" minlength="2" type="text" required class="form__input registr-name">
-                                </div>
-                                <div class="email">
-                                    <input placeholder="Введите email" id="cemail" type="email" name="email" required class="form__input registr-email">
-                                </div>
-                                <div class="password">
-                                    <input placeholder="Введите пароль" class="form__input registr-pass">
-                                </div>
-                                <button class="form__btn join">Присоединиться</button>
-                            </form>
-                        </div>
+                </div>
+                <div class="back">
+                    <div class="back__wrapper">
+                        <h2 class="front__title">Регистрация</h2>
+                        <form class="form registr-form" method="post" action="/">
+                            <div class="name">
+                                <input placeholder="Введите ваше имя" id="cname" name="first_name" minlength="2"
+                                       type="text"
+                                       required class="form__input registr-name">
+                            </div>
+                            <div class="email">
+                                <input placeholder="Введите email" id="cemail" type="email" name="email" required
+                                       class="form__input registr-email">
+                            </div>
+                            <div class="name">
+                                <input placeholder="Введите username" id="username" type="text" name="username" required
+                                       class="form__input form__input registr-name">
+                            </div>
+                            <div class="password">
+                                <input placeholder="Введите пароль" type="password" name="password1"
+                                       class="form__input registr-pass">
+                            </div>
+                            <div class="password">
+                                <input placeholder="Повторите пароль" type="password" name="password2"
+                                       class="form__input registr-pass">
+                            </div>
+                            <button class="form__btn join">Присоединиться</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-
+    </div>
+</main>
 
 
 </body>
