@@ -15,3 +15,20 @@ class Users(models.Model):
 
     def __str__(self):
         return self.username
+
+
+class DataMetric(models.Model):
+    datametric = models.CharField('datametric', max_length=50)
+
+
+    def __str__(self):
+        return self.datametric
+
+
+class Images(models.Model):
+    title = models.CharField('title', max_length=150)
+    images = models.ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.images
+

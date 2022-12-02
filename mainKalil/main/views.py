@@ -1,21 +1,27 @@
-from django.shortcuts import render
 from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
+from django.contrib.auth import authenticate, login
 from django.views import View
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
-from main.forms import UserCreationForm
+from .forms import UserCreationForm
+from django.views.generic.edit import CreateView
 
 
 def index(request):
     return render(request, 'main/index.html')
 
-
 def adminData(request):
     return render(request, 'main/adminData.html')
 
+class SignUp(CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy("login")
+    template_name = "registration/signup.html"
+
 
 class Register(View):
-    template_name = 'main/register.html'
+    template_name = 'main/index.html'
+#    template_name = 'registration/register.html'
 
     def get(self, request):
         context = {
@@ -33,6 +39,9 @@ class Register(View):
             user = authenticate(username=username, password=password)
             login(request, user)
             return redirect('adminData')
+
+#            return redirect('home')
+
         context = {
             'form': form
         }
