@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/KalilBackend" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/pythonProject1/pythonProject1" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/pythonProject12" vcs="Git" />
   </component>
 </project>
