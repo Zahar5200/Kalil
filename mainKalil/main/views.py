@@ -10,8 +10,10 @@ from django.views.generic.edit import CreateView
 def index(request):
     return render(request, 'main/index.html')
 
+
 def adminData(request):
     return render(request, 'main/adminData.html')
+
 
 class SignUp(CreateView):
     form_class = UserCreationForm
@@ -21,7 +23,8 @@ class SignUp(CreateView):
 
 class Register(View):
     template_name = 'main/index.html'
-#    template_name = 'registration/register.html'
+
+    #    template_name = 'registration/register.html'
 
     def get(self, request):
         context = {
@@ -34,13 +37,13 @@ class Register(View):
 
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')
+            email = form.cleaned_data.get('email')
             password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=password)
-            login(request, user)
+            user = authenticate(email=email, password=password)
+            # login(request, user)
             return redirect('adminData')
 
-#            return redirect('home')
+        #return redirect('home')
 
         context = {
             'form': form
